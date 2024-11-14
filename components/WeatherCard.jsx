@@ -5,7 +5,6 @@ import rainy from "../assets/Rainy.svg"
 import cloudy from "../assets/Cloudy.svg"
 import partlyCloudy from "../assets/PartlyCloudy.svg"
 
-
 export default function WeatherCard({ name, temperature, forecast }) {
 
   switch (forecast) {
