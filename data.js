@@ -99,6 +99,6 @@ const cities = [
       temperature: 15,
       forecast: 'Sunny'
     }
-];
+]
 
-module.exports = cities;
+module.exports = cities
