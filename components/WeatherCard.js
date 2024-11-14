@@ -10,22 +10,22 @@ export default function WeatherCard({ name, temperature, forecast }) {
 
   switch (forecast) {
     case 'Sunny':
-      imageSrc = sunny;
-      break;
+      imageSrc = sunny
+      break
     case 'Rainy':
-      imageSrc = rainy;
-      break;
+      imageSrc = rainy
+      break
     case 'Snowy':
-      imageSrc = rainy;
-      break;
+      imageSrc = rainy
+      break
     case 'Partly cloudy':
-      imageSrc = partlyCloudy;
-      break;
+      imageSrc = partlyCloudy
+      break
     case 'Cloudy':
-      imageSrc = cloudy;
-      break;
+      imageSrc = cloudy
+      break
     default:
-      imageSrc = sunny;
+      imageSrc = sunny
   }
 
   return (
