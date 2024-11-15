@@ -37,9 +37,9 @@ export default function Location({ data, setLocation, location }) {
             <img className="card-img-top" src = {imageSrc} alt="Card image cap" id = "icon"/>
         </div>
         <div class="card-body">
-            <h3 className="card-title">{location}</h3>
-            <h5 className="card-text">{currentLocation.temperature}</h5>
-            <h5 className="card-text">{currentLocation.forecast}</h5>
+            <h3 className="card-title">{currentLocation ? location : "Location not found"}</h3>
+            <h5 className="card-text">{currentLocation ? currentLocation.temperature : "Location not found"}</h5>
+            <h5 className="card-text">{currentLocation ? currentLocation.forecast : "Location not found"}</h5>
         </div>
     </div>
   )
