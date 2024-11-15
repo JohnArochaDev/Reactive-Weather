@@ -6,14 +6,15 @@ import { useState } from 'react'
 
 export default function App() {
 
-    const [location, setLocation] = useState('Colorado Springs')
+    const [location, setLocation] = useState('Tokyo')
 
     return (
         <>
             <h1 className = "title">REACTIVE WEATHER</h1>
             <h3 className = "subtitle">Up to the minute weather news</h3>
             <div className = "app">
-                {cities.map((city, idx) => (<WeatherCard key={idx} name={city.name} temperature={city.temperature} forecast={city.forecast} />))}
+                <Location location={location} setLocation={setLocation} data={cities} />
+                {cities.map((city, idx) => (<WeatherCard key={idx} name={city.city} temperature={city.temperature} forecast={city.forecast} />))}
             </div>
         </>
     )
